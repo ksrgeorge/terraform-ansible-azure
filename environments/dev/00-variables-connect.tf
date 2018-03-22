@@ -13,3 +13,11 @@ variable azure_client_secret {
 variable azure_tenant_id {
     type = "string"
 }
+
+variable ssh_admin_username {
+    type = "string"
+}
+
+variable ssh_admin_password {
+    type = "string"
+}

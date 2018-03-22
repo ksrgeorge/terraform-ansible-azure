@@ -32,8 +32,8 @@ resource "azurerm_virtual_machine" "vpn01" {
     # OS Profile
     os_profile {
         computer_name  = "openvpn01"
-        admin_username = "ksrgeorge"
-        admin_password = "Ksrgeorge_1"
+        admin_username = "${var.ssh_admin_username}"
+        admin_password = "${var.ssh_admin_password}"
     }
     # Linux config
     os_profile_linux_config {
@@ -75,8 +75,8 @@ resource "azurerm_virtual_machine" "jmpl01" {
     # OS Profile
     os_profile {
         computer_name  = "jmpl01"
-        admin_username = "ksrgeorge"
-        admin_password = "Ksrgeorge_1"
+        admin_username = "${var.ssh_admin_username}"
+        admin_password = "${var.ssh_admin_password}"
     }
     # Linux config
     os_profile_linux_config {
